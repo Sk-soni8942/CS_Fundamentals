@@ -1,1 +1,159 @@
 
+Operating System (OS)
+What if there were NO Operating System?
+
+Without an OS, users would have to interact directly with hardware, making computer usage extremely difficult.
+
+Problems without an OS
+Bulky and Complex Applications
+Every application would need to communicate directly with hardware devices.
+Developers would have to write hardware-specific code.
+Resource Exploitation
+Programs could use all CPU, memory, and I/O resources without control.
+No fair sharing of resources among applications.
+No Memory Protection
+One program could overwrite another program's memory.
+System crashes would be very common.
+No Security
+Any program could access sensitive data or hardware directly.
+Difficult Hardware Management
+Users would need to know low-level hardware details to run programs.
+Why Do We Need an Operating System?
+
+The Operating System acts as a bridge between the user and the hardware.
+
+Functions of OS
+Acts as an Interface
+Connects users/applications with hardware.
+Resource Management
+Manages CPU, memory, files, and I/O devices.
+Hides Hardware Complexity
+Users do not need to know hardware details.
+Provides Security and Protection
+Prevents unauthorized access to resources.
+Provides a Convenient Environment
+Allows users to execute programs easily.
+Definition of Operating System
+
+Operating System (OS) is a system software that manages all hardware and software resources of a computer system and provides an environment for users to execute programs conveniently while hiding the complexities of the underlying hardware.
+
+Goals of an Operating System
+1. Efficient CPU Utilization
+
+The CPU is one of the most important resources and should not remain idle.
+
+Example
+
+Suppose there are two processes:
+
+P1
+P2
+
+If P1 is currently executing and requests an I/O operation (disk access, keyboard input, etc.), it must wait.
+
+Instead of keeping the CPU idle, the OS switches the CPU to P2.
+
+This increases CPU utilization.
+
+2. Fairness (Avoid Starvation)
+
+Every process should eventually get CPU time.
+
+Process Starvation
+
+A process is said to be starving when it waits indefinitely because other processes continuously receive the required resources.
+
+Example
+P1 → High Priority
+P2 → Medium Priority
+P3 → Low Priority
+
+If high-priority processes keep arriving, P3 may never execute.
+
+This is called Process Starvation.
+
+Solution
+
+Aging
+
+Gradually increase the priority of waiting processes.
+Ensures every process eventually executes.
+3. High Priority Execution
+
+Important tasks should receive CPU time before less important tasks.
+
+Examples:
+
+Emergency system processes
+Real-time applications
+Interrupt handling
+
+The OS must balance:
+
+Fairness
+Priority
+CPU utilization
+Types of Operating Systems
+1. Single Program (Single Tasking) Operating System
+
+A Single Program OS executes only one program at a time.
+
+Working
+Program 1 → Finish
+             ↓
+Program 2 → Finish
+             ↓
+Program 3 → Finish
+Advantages
+Simple design
+Easy to implement
+Disadvantages
+Poor CPU Utilization
+CPU remains idle during I/O operations.
+Low Throughput
+Fewer jobs completed per unit time.
+No Multitasking
+Only one program runs at a time.
+High Waiting Time
+Other programs must wait until the current one finishes.
+
+Note: Starvation is usually not a major issue here because every process eventually gets executed in sequence.
+
+Example
+
+MS-DOS
+
+2. Batch Processing Operating System
+
+Batch OS executes a group (batch) of similar jobs together.
+
+Definition
+
+In a Batch Operating System, users do not interact directly with the computer during execution. Jobs are collected, grouped into batches, and executed one after another automatically.
+
+Working
+User Jobs
+   ↓
+Batch Queue
+   ↓
+Execution
+   ↓
+Output
+Example
+Payroll processing
+Bank statement generation
+Exam result processing
+Advantages
+Better CPU Utilization than Single Program OS.
+Reduced setup time for similar jobs.
+Efficient for large-scale repetitive tasks.
+Disadvantages
+No User Interaction During Execution.
+Long Turnaround Time.
+Difficult Debugging.
+A job may wait a long time before execution.
+Example
+
+Suppose a college wants to generate results for 10,000 students.
+
+Instead of processing each result separately, all result-generation jobs are collected and executed as one batch.
