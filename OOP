@@ -1,1 +1,6 @@
 
+Constructor in OOP
+
+A constructor is a special member function of a class that is automatically called when an object is created.
+
+Its main purpose is to initialize the object's data members.
