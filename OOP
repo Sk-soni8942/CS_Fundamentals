@@ -4,3 +4,11 @@ Constructor in OOP
 A constructor is a special member function of a class that is automatically called when an object is created.
 
 Its main purpose is to initialize the object's data members.
+
+// copy constructor (shallow copy and Deep copy )
+
+Shallow Copy: Copies member values directly. For pointer members, only the memory address is copied, causing multiple objects to share the same memory.
+
+Deep Copy: Allocates new memory and copies the actual contents so that each object has its own independent copy of the data
+
+Dangling Pointer: A pointer that refers to a memory location that has already been deallocated or is otherwise no longer valid. Accessing it results in undefined behavior.
